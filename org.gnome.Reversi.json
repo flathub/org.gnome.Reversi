@@ -29,10 +29,9 @@
             "buildsystem" : "autotools",
             "sources" : [
                 {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/gsound.git",
-                    "tag": "1.0.2",
-                    "commit": "a86946b494aa32782b3f6334344d07b5c11d5219"
+                    "type" : "archive",
+                    "url" : "https://download.gnome.org/sources/gsound/1.0/gsound-1.0.2.tar.xz",
+                    "sha256": "bba8ff30eea815037e53bee727bbd5f0b6a2e74d452a7711b819a7c444e78e53"
                 }
             ]
         },
@@ -41,10 +40,9 @@
             "buildsystem": "meson",
             "sources" : [
                 {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/iagno.git",
-                    "tag": "3.36.0",
-                    "commit": "04e5a0bd533b3a6106590b23e65e189d793dd149"
+                    "type" : "archive",
+                    "url" : "https://download.gnome.org/sources/iagno/3.36/iagno-3.36.3.tar.xz",
+                    "sha256": "6b590c27787908a08efca151631ca2c0ac2d00910a7bee19c03447f4944b2d32"
                 }
             ]
         }
