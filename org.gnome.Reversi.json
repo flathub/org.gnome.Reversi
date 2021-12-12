@@ -1,13 +1,14 @@
 {
     "app-id" : "org.gnome.Reversi",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "3.38",
+    "runtime-version" : "41",
     "sdk" : "org.gnome.Sdk",
     "command" : "iagno",
     "finish-args" : [
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
+        "--device=dri",
         "--socket=pulseaudio",
         "--talk-name=org.gnome.SettingsDaemon.Color"
     ],
@@ -24,31 +25,15 @@
         "*.a"
     ],
     "modules" : [
+        "shared-modules/libcanberra/libcanberra.json",
         {
             "name" : "gsound",
-            "buildsystem" : "autotools",
+            "buildsystem" : "meson",
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/gsound/1.0/gsound-1.0.2.tar.xz",
-                    "sha256": "bba8ff30eea815037e53bee727bbd5f0b6a2e74d452a7711b819a7c444e78e53"
-                }
-            ],
-            "modules" : [
-                {
-                    "name" : "libcanberra",
-                    "config-opts" : [
-                        "--disable-alsa",
-                        "--disable-null",
-                        "--disable-oss"
-                    ],
-                    "sources" : [
-                        {
-                            "type" : "archive",
-                            "url" : "http://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz",
-                            "sha256" : "c2b671e67e0c288a69fc33dc1b6f1b534d07882c2aceed37004bf48c601afa72"
-                        }
-                    ]
+                    "url" : "https://download.gnome.org/sources/gsound/1.0/gsound-1.0.3.tar.xz",
+                    "sha256": "ca2d039e1ebd148647017a7f548862350bc9af01986d39f10cfdc8e95f07881a"
                 }
             ]
         },
@@ -57,10 +42,10 @@
             "buildsystem": "meson",
             "sources" : [
                 {
-                    "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/iagno/3.38/iagno-3.38.1.tar.xz",
-                    "sha256": "84b9f32ce0389758a21d63c7eb1c227db7116b51d3149aa0eae3509168e0ed24"
-                }
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/iagno.git",
+                    "commit": "19bf5142d77d9c8241ca7511adcfef8e12fc77fb"
+                  }
             ]
         }
     ]
