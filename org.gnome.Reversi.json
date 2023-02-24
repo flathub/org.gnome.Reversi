@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.Reversi",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "41",
+    "runtime-version" : "43",
     "sdk" : "org.gnome.Sdk",
     "command" : "iagno",
     "finish-args" : [
@@ -44,7 +44,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/iagno.git",
-                    "commit": "19bf5142d77d9c8241ca7511adcfef8e12fc77fb"
+                    "commit": "ba5a540484796e2f0a4379d656aa1e3b174f6da8"
                   }
             ]
         }
