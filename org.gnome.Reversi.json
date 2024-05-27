@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.Reversi",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "44",
+    "runtime-version" : "46",
     "sdk" : "org.gnome.Sdk",
     "command" : "iagno",
     "finish-args" : [
@@ -14,12 +14,14 @@
     ],
     "cleanup" : [
         "/include",
+        "/lib/girepository-1.0",
         "/lib/pkgconfig",
-        "/share/pkgconfig",
-        "/share/aclocal",
         "/man",
-        "/share/man",
+        "/share/aclocal",
+        "/share/gir-1.0",
         "/share/gtk-doc",
+        "/share/pkgconfig",
+        "/share/man",
         "/share/vala",
         "*.la",
         "*.a"
@@ -44,8 +46,12 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/iagno.git",
-                    "commit": "ba5a540484796e2f0a4379d656aa1e3b174f6da8"
-                  }
+                    "commit": "af4286a9a3dbf6dcadc3bfc92c58e73dcc435a7b"
+                },
+                {
+                    "type": "patch",
+                    "path": "fix_appdata.patch"
+                }
             ]
         }
     ]
