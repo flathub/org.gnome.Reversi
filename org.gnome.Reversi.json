@@ -46,7 +46,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/iagno.git",
-                    "commit": "9d1ad244ad7208bc2e0dc46690ff811ad384b7ac"
+                    "commit": "a0d8ba95e18d0aeba9a12fb7291bff0513725c26",
+                    "tag": "50.alpha"
                 }
             ]
         }
