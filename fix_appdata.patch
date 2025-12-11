@@ -1,5 +1,14 @@
+From 5302489292326d503b8d3560ae65d55f8ab328d1 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Thu, 11 Dec 2025 12:34:40 +0300
+Subject: [PATCH] Fix appdata papercuts
+
+---
+ data/org.gnome.Reversi.appdata.xml.in | 39 +++++----------------------------------
+ 1 file changed, 5 insertions(+), 34 deletions(-)
+
 diff --git a/data/org.gnome.Reversi.appdata.xml.in b/data/org.gnome.Reversi.appdata.xml.in
-index 80c3376..c8cff5d 100644
+index 80c3376..2c3b341 100644
 --- a/data/org.gnome.Reversi.appdata.xml.in
 +++ b/data/org.gnome.Reversi.appdata.xml.in
 @@ -5,8 +5,7 @@
@@ -12,7 +21,17 @@ index 80c3376..c8cff5d 100644
    <description>
      <p>
        Reversi is a two-player strategy game, played on an 8 by 8 board.
-@@ -35,7 +34,8 @@
+@@ -26,16 +25,17 @@
+   </description>
+   <screenshots>
+     <screenshot height="447" width="700" type="default">
+-      <image>https://gitlab.gnome.org/GNOME/iagno/-/raw/master/data/screenshot.png</image>
++      <image>https://static.gnome.org/appdata/mcatanzaro-old/iagno.png</image>
+       <caption>A Reversi game preview</caption>
+     </screenshot>
+   </screenshots>
+   <provides>
+     <id>org.gnome.iagno.desktop</id>
    </provides>
    <url type="homepage">https://wiki.gnome.org/Apps/Reversi</url>
    <url type="bugtracker">https://gitlab.gnome.org/GNOME/iagno/issues</url>
