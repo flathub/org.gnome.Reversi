@@ -13,18 +13,7 @@
         "--talk-name=org.gnome.SettingsDaemon.Color"
     ],
     "cleanup" : [
-        "/include",
-        "/lib/girepository-1.0",
-        "/lib/pkgconfig",
-        "/man",
-        "/share/aclocal",
-        "/share/gir-1.0",
-        "/share/gtk-doc",
-        "/share/pkgconfig",
-        "/share/man",
-        "/share/vala",
-        "*.la",
-        "*.a"
+        "/share/man"
     ],
     "modules" : [
         {
